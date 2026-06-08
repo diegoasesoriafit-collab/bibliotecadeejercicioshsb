@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HSB | Biblioteca de Ejercicios</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="login" class="login-screen">
+    <div class="login-card">
+      <p class="eyebrow">HSB |</p>
+      <h1>Biblioteca de Ejercicios</h1>
+      <p class="sub">Técnica simple, errores comunes, calzado recomendado y alternativas.</p>
+      <input id="accessCode" type="password" placeholder="Código de acceso" autocomplete="off" />
+      <button id="enterBtn">Entrar</button>
+      <p id="loginMsg" class="login-msg">¿No tienes código? Escribe a Diego.</p>
+    </div>
+  </div>
+
+  <main id="app" class="app hidden">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">HSB |</p>
+        <h1>Biblioteca de Ejercicios</h1>
+      </div>
+      <button id="menuBtn" class="ghost">☰ Menú</button>
+    </header>
+
+    <section class="hero">
+      <h2>Entrena con intención. No por inercia.</h2>
+      <p>Busca un ejercicio, filtra por músculo o entra en una ficha para ver la técnica explicada en palabras simples.</p>
+      <input id="search" type="search" placeholder="Buscar ejercicio: press banca, remo, sentadilla..." />
+    </section>
+
+    <nav id="filters" class="filters"></nav>
+
+    <section class="layout">
+      <aside id="sidebar" class="sidebar">
+        <h3>Ejercicios</h3>
+        <div id="exerciseList" class="exercise-list"></div>
+      </aside>
+
+      <article id="detail" class="detail"></article>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
